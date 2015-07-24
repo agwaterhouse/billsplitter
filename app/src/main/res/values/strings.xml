@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SimpleBillSplitter</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2629756402434510/4164306500</string>
+</resources>

@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+
+    android:id="@+id/old">
+
+    <EditText
+        android:hint="Enter The Cost Here"
+        android:inputType="numberDecimal" android:id="@+id/num1"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="40sp"
+     />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:src="@drawable/money"/>
+
+    <EditText
+        android:hint="Enter The Number Of People Here"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:inputType="number"
+        android:id="@+id/num2"
+        android:layout_width="fill_parent"
+        android:layout_height="90sp"
+
+        android:nestedScrollingEnabled="true" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:src="@drawable/howmany"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:text="How Much Do I Pay"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30sp"
+        android:clickable="true"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="£"
+        android:gravity="start"
+
+        android:id="@+id/poundsign"
+
+        android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/sum"
+
+            android:gravity="end"
+            android:textSize="50sp"/>
+
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+
+
+
+
